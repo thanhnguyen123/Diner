@@ -29,7 +29,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
     <!--Style CSS Inline-->
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/services__css/services.css" />
   </head>
   <body>
     <header class="header">
@@ -61,6 +61,9 @@
               <i class="fa-regular fa-moon"></i>
             </div>
           </div>
+          <button class="navbar-toggler">
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
         <div class="heading">
           <a href="" class="page-active">Home</a>
@@ -72,14 +75,16 @@
     <section class="introduce">
       <div class="container">
         <div class="row">
-          <div class="col-5">
+          <div class="col-lg-5 col-sm-12 intro-left">
             <div class="item">
               <h3>What We Offer</h3>
-              <h4>We found our creative space that is open for you.</h4>
+              <h4 class="pe-lg-4">
+                We found our creative space that is open for you.
+              </h4>
             </div>
           </div>
-          <div class="col-7">
-            <div class="item">
+          <div class="col-lg-7 col-sm-12 intro-right">
+            <div class="item px-lg-5">
               <p>
                 Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
                 ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
@@ -101,7 +106,7 @@
     <section class="service">
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 list-service">
             <div class="item">
               <div class="thumbnail">
                 <i class="fa fa-users"></i>
@@ -118,7 +123,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 list-service">
             <div class="item">
               <div class="thumbnail">
                 <i class="fa fa-shield"></i>
@@ -135,10 +140,10 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 list-service">
             <div class="item">
               <div class="thumbnail">
-                <i class="fa fa-thermometer-full plus"></i>
+                <i class="fa fa-thermometer-full"></i>
                 <div class="list-number">
                   <p>03</p>
                   <a href="">Pizza</a>
@@ -152,7 +157,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 list-service">
             <div class="item">
               <div class="thumbnail">
                 <i class="fa fa-american-sign-language-interpreting"></i>
@@ -169,7 +174,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 list-service">
             <div class="item">
               <div class="thumbnail">
                 <i class="fa fa-paint-brush"></i>
@@ -186,7 +191,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 list-service">
             <div class="item">
               <div class="thumbnail">
                 <i class="fa fa-eraser"></i>
@@ -224,11 +229,128 @@
         </div>
       </div>
     </section>
-    <section class="menu"></section>
+    <section class="menu container p-5">
+      <div class="plan text-center">
+        <h3>Plans</h3>
+        <h4>Our Menu</h4>
+      </div>
+      <div class="main">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12 px-lg-4 p-sm-0 list-menu">
+            <div class="item">
+              <div class="order">
+                <div class="name-order">
+                  <h4>Slow Cooked Egg</h4>
+                </div>
+                <div class="price-order">
+                  <h4>$79.50</h4>
+                </div>
+              </div>
+              <div class="description-order">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="order">
+                <div class="name-order">
+                  <h4>Ravioli</h4>
+                </div>
+                <div class="price-order">
+                  <h4>$63.75</h4>
+                </div>
+              </div>
+              <div class="description-order">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="order">
+                <div class="name-order">
+                  <h4>Chicken Salad</h4>
+                </div>
+                <div class="price-order">
+                  <h4>$70.50</h4>
+                </div>
+              </div>
+              <div class="description-order">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="order">
+                <div class="name-order">
+                  <h4>Sweet Heat Salad</h4>
+                </div>
+                <div class="price-order">
+                  <h4>$58.25</h4>
+                </div>
+              </div>
+              <div class="description-order">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 px-lg-4 p-sm-0 list-menu">
+            <div class="item">
+              <div class="order">
+                <div class="name-order">
+                  <h4>Spinach Chicken</h4>
+                </div>
+                <div class="price-order">
+                  <h4>$63.75</h4>
+                </div>
+              </div>
+              <div class="description-order">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="order">
+                <div class="name-order">
+                  <h4>Tomahawk Steak</h4>
+                </div>
+                <div class="price-order">
+                  <h4>$70.50</h4>
+                </div>
+              </div>
+              <div class="description-order">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="order">
+                <div class="name-order">
+                  <h4>Cornish Turbot</h4>
+                </div>
+                <div class="price-order">
+                  <h4>$58.25</h4>
+                </div>
+              </div>
+              <div class="description-order">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="order">
+                <div class="name-order">
+                  <h4>Permanent Waving</h4>
+                </div>
+                <div class="price-order">
+                  <h4>$79.50</h4>
+                </div>
+              </div>
+              <div class="description-order">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="footer">
       <div class="container pb-5">
         <div class="row pt-4">
-          <div class="col-4">
+          <div class="col-lg-4 col-sm-8">
             <div class="item">
               <h3>
                 <a class="text-decoration-none py-4 d-block" href="">Diner</a>
@@ -246,7 +368,7 @@
               </div>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-lg-2 col-sm-4">
             <div class="item">
               <h4 class="py-4">Usefull Links</h4>
               <ul>
@@ -258,7 +380,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-lg-2 col-sm-4">
             <div class="item">
               <h4 class="py-4">More Info</h4>
               <ul>
@@ -270,7 +392,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-4 col-sm-8">
             <div class="item">
               <h4 class="py-4">Subscribe to our Newsletter</h4>
               <p>
@@ -289,19 +411,24 @@
           </div>
         </div>
       </div>
-      <div class="license d-flex p-3 container">
-          <div class="copyright-left">
-            <p>
-              © 2021 Diner. All rights reserved. Design by
-              <a href="" class="special">W3Layouts</a>
-            </p>
+      <div class="license p-3 container">
+        <div class="row">
+          <div class="col-lg-7 col-sm-12 text-sm-center text-md-start">
+            <div class="copyright-left">
+              <p>
+                © 2021 Diner. All rights reserved. Design by
+                <a href="" class="special">W3Layouts</a>
+              </p>
+            </div>
           </div>
-         <div class="copyright-right">
-          <a href="">Careers</a>
-          <a href="">Privacy Policy</a>
-          <a href="">Contact Us</a>
-         </div>
-    
+          <div class="col-lg-5 col-sm-12 text-lg-end text-sm-center">
+            <div class="copyright-right">
+              <a href="">Careers</a>
+              <a href="">Privacy Policy</a>
+              <a href="">Contact Us</a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
     <script

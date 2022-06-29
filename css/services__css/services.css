@@ -9,7 +9,7 @@ section {
 }
 /****************************************Header****************************************/
 header {
-  min-height: 400px;
+  min-height: 370px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -19,34 +19,34 @@ header {
       rgb(236, 98, 6, 0.9),
       rgba(5, 3, 0, 0.8)
     ),
-    url("../img/banner2.jpg");
+    url("../../img/banner2.jpg");
 }
-header .container {
+.header .container {
   position: relative;
   display: flex;
   justify-content: space-between;
 }
-header .header-left h2 {
+.header .header-left h2 {
   width: 100px;
   height: 100px;
   line-height: 100px;
   font-weight: bold;
   font-size: 40px;
 }
-header .header-right {
+.header .header-right {
   display: flex;
   line-height: 100px;
 }
-header .container i,
-header .container a {
+.header .container i,
+.header .container a {
   color: #ffffff;
   text-decoration: none;
 }
-header .header-right .navbar-plus a {
+.header .header-right .navbar-plus a {
   margin-right: 30px;
   font-weight: 600;
 }
-header .header-right .navbar-plus a:hover {
+.header .header-right .navbar-plus a:hover {
   color: #ff6600;
   transition: all 0.5s;
 }
@@ -76,37 +76,41 @@ header .header-right .navbar-plus a:hover {
 .header-right .switch-mode {
   font-size: 20px;
 }
-header .heading {
+.header .heading {
   color: #ffffff;
   font-weight: 600;
   position: absolute;
-  top: 200%;
+  top: 150%;
   left: 50%;
   transform: translateX(-50%);
 }
-header .heading a {
+.header .heading a {
   padding: 0 5px;
 }
-header .page-active {
+.header .page-active {
   color: #ff6600 !important;
+}
+.header .navbar-toggler {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  display: none;
 }
 /****************************************EndHeader****************************************/
 
 /****************************************Introduce****************************************/
-.introduce .row .col-5 h3 {
+.introduce .row .intro-left h3 {
   font-family: "Pacifico", cursive;
   color: #ff6600;
 }
-.introduce .row .col-5 h4 {
+.introduce .row .intro-left h4 {
   font-weight: 600;
   font-size: 40px;
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
-.introduce .col-7 .item {
+.introduce .intro-right .item {
   font-size: 18px;
   color: #161c2db3;
-  padding-right: 70px;
-  text-align: justify;
 }
 /****************************************EndIntroduce****************************************/
 
@@ -114,11 +118,10 @@ header .page-active {
 .service {
   padding-bottom: 100px;
 }
-.service .row .col-4 {
+.service .row .list-service {
   padding: 15px;
-  width: calc(100% / 3);
 }
-.service .col-4 .item {
+.service .list-service .item {
   padding: 40px;
   background-color: #ffffff;
   display: flex;
@@ -131,11 +134,11 @@ header .page-active {
   font-size: 18px;
   margin-bottom: 0;
 }
-.service .col-4 .item .thumbnail {
+.service .list-service .item .thumbnail {
   display: flex;
   margin-bottom: 16px;
 }
-.service .col-4 .item .thumbnail i {
+.service .list-service .item .thumbnail i {
   width: 65px;
   height: 65px;
   line-height: 65px;
@@ -147,12 +150,12 @@ header .page-active {
   margin-right: 20px;
 }
 
-.service .col-4 .item:hover .thumbnail i {
+.service .list-service .item:hover .thumbnail i {
   color: #ffffff;
   background-color: #ff6600;
   transition: all 0.5s;
 }
-.service .col-4 .item .thumbnail a {
+.service .list-service .item .thumbnail a {
   text-decoration: none;
   font-size: 24px;
   color: #000000;
@@ -168,7 +171,7 @@ header .page-active {
 /****************************************Contact****************************************/
 .contact {
   height: 450px;
-  background-image: url("../img/banner2.jpg");
+  background-image: url("../../img/banner2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -219,6 +222,37 @@ header .page-active {
 }
 /****************************************End Contact****************************************/
 
+/****************************************Menu****************************************/
+.menu .plan h3 {
+  font-family: "Pacifico", cursive;
+  color: #ff6600;
+  font-size: 20px;
+}
+.menu .plan h4 {
+  font-size: 38px;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+.menu .main .list-menu{
+  padding: 0 40px;
+}
+.menu .main .item{
+  padding-bottom: 30px;
+}
+.menu .main .item .price-order {
+  color: #ff6600;
+}
+
+.menu .main .order {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px dotted #bbb;
+}
+.menu .main .item .description-order {
+  font-size: 18px;
+}
+/****************************************End Menu****************************************/
+
 /****************************************Footer****************************************/
 footer {
   background-color: #000000;
@@ -252,10 +286,10 @@ footer ul {
   line-height: 2;
 }
 footer .row .item .socialnetwork a i {
- width: 36px;
- height: 36px;
- line-height: 36px;
- text-align: center;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
   font-size: 16px;
   color: #ff6600;
   background-color: #ffffff;
@@ -271,11 +305,10 @@ footer .item input {
   padding: 15px;
   border-radius: 5px;
   font-size: 18px;
-
 }
 footer .row input[type="email"]:focus {
-  border: 1px solid #ff6600!important;
-  box-shadow:none;
+  border: 1px solid #ff6600 !important;
+  box-shadow: none;
 }
 
 footer .row .item .btn {
@@ -287,23 +320,80 @@ footer .row .item .btn {
   border-radius: 5px;
   margin-top: 20px;
 }
-footer .item .btn:hover{
-    opacity: 0.8;
+footer .item .btn:hover {
+  opacity: 0.8;
 }
-footer .license{
-    justify-content: space-between;
+footer .license {
+  justify-content: space-between;
 }
-footer .license a{
-    text-decoration: none;
-    color: #a5a2a1;
-    margin-right: 40px;
+footer .license a {
+  text-decoration: none;
+  color: #a5a2a1;
+  margin-right: 30px;
 }
 footer .copyright-right a:hover,
-footer .license .copyright-left .special{
+footer .license .copyright-left .special {
   color: #ff6600;
 }
-footer .license .special:hover{
+footer .license .special:hover {
   color: #ffffff;
 }
-
 /****************************************End Footer****************************************/
+
+/* desktop */
+@media screen and (max-width: 1200px) {
+}
+
+/* tablet */
+@media screen and (max-width: 992px) {
+  footer .license a{
+
+  }
+}
+/* điện thoại (xoay ngang) */
+@media screen and (max-width: 768px) {
+  header{
+    min-height: 260px;
+  }
+  .header .header-right .navbar-plus,
+  .header .header-right .research{
+    display: none;
+  }
+  .header .navbar-toggler{
+    display: block;
+  }
+  .header .switch-mode{
+    line-height: 108px;
+  }
+  .introduce .item h3{
+    font-size: 16px;
+  }
+  .introduce .item h4{
+    font-size: 30px!important;
+    padding-bottom: 20px;
+  }
+  .introduce .item p{
+    font-size: 16px;
+  }
+  .service .list-number a,
+  .service .detail p{
+    font-size: 16px!important;
+  }
+  .contact {
+    height: 320px;
+  }
+  .contact .contact-top h3{
+    font-size: 35px;
+  }
+  .contact .contact-bottom a{
+    font-size: 16px;
+  }
+  .menu .item h4,
+  .menu .item p{
+    font-size: 16px;
+  }
+}
+/* điện thoại (xoay dọc) */
+@media screen and (max-width: 576px) {
+
+}
