@@ -102,11 +102,13 @@ header {
 .introduce .row .intro-left h3 {
   font-family: "Pacifico", cursive;
   color: #ff6600;
+  font-size: 20px;
+  font-weight: 400;
 }
 .introduce .row .intro-left h4 {
   font-weight: 600;
   font-size: 40px;
-  /* padding-right: 20px; */
+  
 }
 .introduce .intro-right .item {
   font-size: 18px;
@@ -346,12 +348,6 @@ footer .license .special:hover {
 
 /* tablet */
 @media screen and (max-width: 992px) {
-  footer .license a{
-
-  }
-}
-/* điện thoại (xoay ngang) */
-@media screen and (max-width: 768px) {
   header{
     min-height: 260px;
   }
@@ -365,6 +361,9 @@ footer .license .special:hover {
   .header .switch-mode{
     line-height: 108px;
   }
+}
+/* điện thoại (xoay ngang) */
+@media screen and (max-width: 768px) {
   .introduce .item h3{
     font-size: 16px;
   }
@@ -395,5 +394,4 @@ footer .license .special:hover {
 }
 /* điện thoại (xoay dọc) */
 @media screen and (max-width: 576px) {
-
 }
