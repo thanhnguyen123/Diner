@@ -320,3 +320,46 @@ footer .license .special:hover {
   color: #ffffff;
 }
 /****************************************End Footer****************************************/
+
+/* desktop */
+@media screen and (max-width: 1200px) {
+}
+/* tablet */
+@media screen and (max-width: 992px) {
+  header{
+    min-height: 260px;
+  }
+  .header .header-right .navbar-plus{
+    display: none;
+  }
+  .header .switch-mode{
+    line-height: 108px;
+  }
+  section{
+    padding-top: 50px;
+  }
+  .poster .tittle h3{
+   font-size:  16px;
+  }
+  .poster .tittle h4{
+    font-size: 30px;
+  }
+  .poster .description a{
+    font-size: 20px;
+  }
+}
+/* điện thoại (xoay ngang) */
+@media screen and (max-width: 768px) {
+  .header .header-right .research{
+    display: none;
+  }
+  .header .navbar-toggler{
+    display: block;
+  }
+  .header .header-right .navbar-plus{
+    display: none;
+  }
+}
+/* điện thoại (xoay dọc) */
+@media screen and (max-width: 576px) {
+}
