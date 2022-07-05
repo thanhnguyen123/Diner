@@ -17,7 +17,7 @@ header {
   background-image: linear-gradient(
       to right,
       rgb(236, 98, 6, 0.9),
-      rgba(5, 3, 0, 0.8)
+      rgba(5, 3, 0, 0.2)
     ),
     url("../../img/banner2.jpg");
 }
