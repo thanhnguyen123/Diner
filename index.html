@@ -23,11 +23,20 @@
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
     />
+    <!--Swiper-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <!--Font Awesome-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!--Style CSS Inline-->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -371,7 +380,7 @@
                 <i class="fa fa-building"></i>
               </div>
               <div class="info">
-                <p class="number">15,100</p>
+                <p class="number counter wow">15,100</p>
                 <p class="name-list">Branches</p>
               </div>
             </div>
@@ -382,7 +391,7 @@
                 <i class="fa fa-cutlery"></i>
               </div>
               <div class="info">
-                <p class="number">19,256</p>
+                <p class="number counter wow">19,256</p>
                 <p class="name-list">Food Items</p>
               </div>
             </div>
@@ -393,7 +402,7 @@
                 <i class="fa fa-users"></i>
               </div>
               <div class="info">
-                <p class="number">12,100</p>
+                <p class="number counter wow">12,100</p>
                 <p class="name-list">Chefs</p>
               </div>
             </div>
@@ -404,7 +413,7 @@
                 <i class="fa fa-smile"></i>
               </div>
               <div class="info">
-                <p class="number">2,560</p>
+                <p class="number counter wow">2,560</p>
                 <p class="name-list">Happy Customers</p>
               </div>
             </div>
@@ -414,7 +423,97 @@
     </section>
     <section class="video"></section>
     <section class="blog"></section>
-    <section class="testimonial"></section>
+    <section class="testimonial">
+      <div class="container">
+        <div class="tittle text-center">
+          <h3>Testimonials</h3>
+          <h4>What People Say</h4>
+        </div>
+        <div id="carousel-1" class="carousel slide carousel-fade">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-1"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-1"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-1"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-caption d-none d-md-block text-dark">
+                <img src="./img/team1.jpg" class="" alt="..." />
+                <div class="comment">
+                  <h5>"</h5>
+                  <h4>OMG! I cannot believe. It's Awesome</h4>
+                  <p>
+                    My new site is so much faster and easier to work with than
+                    my old site. They are here to help the customers to get
+                    their success. Nemo sit eos, quod minus eius illo labore.
+                    Pellen tesque libero ut justo, ultrices in ligula.
+                  </p>
+                  <div class="commentator py-lg-4">
+                    <h3>Johnson william</h3>
+                    <p>Customer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption d-none d-md-block text-dark">
+                <img src="./img/team2.jpg" class="" alt="..." />
+                <div class="comment">
+                  <h5>"</h5>
+                  <h4>OMG! I cannot believe. It's Awesome</h4>
+                  <p>
+                    My new site is so much faster and easier to work with than
+                    my old site. They are here to help the customers to get
+                    their success. Nemo sit eos, quod minus eius illo labore.
+                    Pellen tesque libero ut justo, ultrices in ligula.
+                  </p>
+                  <div class="commentator py-lg-4">
+                    <h3>Alexander sakura</h3>
+                    <p>Customer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption d-none d-md-block text-dark">
+                <img src="./img/team3.jpg" class="" alt="..." />
+                <div class="comment">
+                  <h5>"</h5>
+                  <h4>OMG! I cannot believe. It's Awesome</h4>
+                  <p>
+                    My new site is so much faster and easier to work with than
+                    my old site. They are here to help the customers to get
+                    their success. Nemo sit eos, quod minus eius illo labore.
+                    Pellen tesque libero ut justo, ultrices in ligula.
+                  </p>
+                  <div class="commentator py-lg-4">
+                    <h3>John wilson</h3>
+                    <p>Customer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="footer">
       <div class="container pb-5">
         <div class="row pt-4">
@@ -504,5 +603,37 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <!--wowjs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!--jquery count-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="./js/jquery.countup.min.js"></script>
+    <script>
+      $(".counter").countUp({
+        time: 2000,
+        delay: 10,
+      });
+    </script>
+    <!--Swiper-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var testimonialThumbs = new Swiper(".slider-down", {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        centeredSlides: false,
+        freeMode: false,
+        autoplay: false,
+        loop: true,
+        speed: 500,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>

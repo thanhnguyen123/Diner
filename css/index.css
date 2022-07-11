@@ -375,6 +375,49 @@ header {
 }
 /****************************************EndStatictis****************************************/
 
+
+/****************************************Testimonial****************************************/
+.testimonial .carousel-caption img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  padding: 4px;
+}
+.testimonial .carousel-item {
+  height: 450px;
+} 
+.testimonial .carousel-indicators [data-bs-target]{
+  background-color: #ff6600;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+}
+.testimonial .carousel-item.active{
+  animation: fadeInRight; 
+  animation-duration: 0.5s;
+}
+.testimonial .carousel-inner .comment h5{
+  font-size: 50px;
+  color: #ff6600;
+  font-weight: bold;
+}
+.testimonial .carousel-inner .comment h4{
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+}
+.testimonial .carousel-inner .comment p{
+ font-size: 18px;
+ padding: 0 30px;
+}
+.testimonial .carousel-inner .comment h3{
+  font-size: 20px;
+  font-weight: bold;
+}
+/****************************************End Testimonial****************************************/
+
+
 /****************************************Footer****************************************/
 footer {
   background-color: #000000;
