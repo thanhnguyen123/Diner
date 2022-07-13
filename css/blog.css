@@ -320,7 +320,23 @@ footer .license .special:hover {
   color: #ffffff;
 }
 /****************************************End Footer****************************************/
-
+.uptotop {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: #ff6600;
+  border-radius: 50%;
+  text-align: center;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  color: #ffffff;
+  display: block;
+}
+.uptotop:hover{
+  color: #ffffff;
+  opacity: 0.6;
+}
 /* desktop */
 @media screen and (max-width: 1200px) {
 }
