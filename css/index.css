@@ -797,7 +797,7 @@ footer .license .special:hover {
   .header .header-right .research {
     display: block;
   }
-  .header .navbar-plus {
+  .header .header-right .navbar-plus {
     display: none;
   }
   .header .header-left .tittle-description {
@@ -825,6 +825,9 @@ footer .license .special:hover {
 }
 /* điện thoại (xoay dọc) */
 @media screen and (max-width: 576px) {
+  .header{
+    padding: 0 30px;
+  }
   .introduce .intro-left .tittle h3,
   .introduce .intro-right p {
     font-size: 16px;
