@@ -1,0 +1,14 @@
+BC33_Dinner_Group 10: 
+- Nguyễn Trường Thành 
+- Huỳnh Nhật Nam
+Website: 1.HomePage, 2.About, 3.Services, 4.Blog, 5.BlogSingle, 6.Contact
+
+Thành: 1.HomePage 50% (Header -> Service). 
+       2.Services.
+       3.Blog.
+       4.BlogSingle.
+
+
+Nam:   1.HomePage 50% (Contact -> Footer)
+       2.About Us
+       3.Contact Us.
