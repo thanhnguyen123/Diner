@@ -125,7 +125,6 @@ header {
 /****************************************EndHeader****************************************/
 
 /****************************************Introduce****************************************/
-
 .introduce .intro-right .item {
   font-size: 18px;
   color: #161c2db3;
@@ -137,6 +136,11 @@ header {
   background-color: #ff6600;
   padding-top: 0;
   margin-top: 100px;
+}
+.order .order-left,
+.order .row {
+  margin: 0;
+  padding: 0;
 }
 .order .order-left .image-description {
   background-image: url("../img/banner3.jpg");
@@ -730,7 +734,6 @@ footer .license .special:hover {
   opacity: 0.6;
 }
 /****************************************End****************************************/
-
 
 @keyframes pulse-border {
   0% {
