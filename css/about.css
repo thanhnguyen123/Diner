@@ -118,6 +118,7 @@ header {
 .aboutus_content .col_left img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 .aboutus_content .col_right {
