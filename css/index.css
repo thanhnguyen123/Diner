@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
 }
+a,
+i {
+  cursor: pointer;
+}
 section {
   padding-top: 100px;
 }
@@ -114,7 +118,11 @@ header {
   font-size: 20px;
 }
 .header .page-active {
-  color: #ff6600 !important;
+  color: #ff6600!important;
+}
+.header .page-active-mobile {
+  background-color: #000 !important;
+  color: #ff6600;
 }
 .header .navbar-toggler {
   background-color: transparent;
@@ -360,7 +368,8 @@ header {
 .statistical {
   position: relative;
   z-index: 10;
-  top: -160px;
+  bottom: 65px;
+  padding-top: 0px;
 }
 .statistical .item {
   box-shadow: 0 25px 50px 0 rgb(0, 0, 0, 0.03);
@@ -745,10 +754,10 @@ footer .license .special:hover {
     opacity: 0;
   }
 }
-/* desktop */
+
 @media screen and (max-width: 1200px) {
 }
-/* tablet */
+
 @media screen and (max-width: 992px) {
   header {
     min-height: 600px;
@@ -788,11 +797,14 @@ footer .license .special:hover {
     grid-template-columns: 1fr 1fr !important;
   }
 }
-/* điện thoại (xoay ngang) */
+
 @media screen and (max-width: 768px) {
   header {
     height: 600px;
     background-position: left;
+  }
+  .header .header-right {
+    line-height: 100px;
   }
   .header .header-right .research {
     display: block;
@@ -823,10 +835,13 @@ footer .license .special:hover {
     min-height: 250px !important;
   }
 }
-/* điện thoại (xoay dọc) */
-@media screen and (max-width: 576px) {
-  .header{
+
+@media screen and (max-width: 390px) {
+  .header {
     padding: 0 30px;
+  }
+  .header .header-right {
+    line-height: 50px;
   }
   .introduce .intro-left .tittle h3,
   .introduce .intro-right p {
@@ -862,9 +877,16 @@ footer .license .special:hover {
     font-size: 35px;
   }
   .contact .contact-button a {
+    padding: 10px 30px;
     font-size: 16px;
   }
   .testimonial .carousel-item {
     min-height: 600px;
+  }
+  .testimonial .carousel-inner .comment p {
+    font-size: 15px;
+  }
+  .offcanvas-end{
+    width: 300px !important;
   }
 }

@@ -49,7 +49,7 @@
             <a href="../_blog/blog.html">Blog</a>
             <a href="../_contact/contact.html">Contact</a>
           </nav>
-          <div class="research">
+          <div class="research d-none d-md-block">
             <form action="">
               <input type="text" placeholder="Search here..." />
               <span class="iconsearch">
@@ -57,17 +57,75 @@
               </span>
             </form>
           </div>
-          <div class="switch-mode">
-            <div class="dark-mode">
-              <i class="fa-regular fa-moon"></i>
+          <nav class="navbar p-0 d-md-flex d-lg-none">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+              style="width: 400px; background-color: #fb7922;"
+            >
+              <div
+                class="offcanvas-header text-light">
+                <h5 class="offcanvas-title text-dark fw-bold" id="offcanvasNavbarLabel">
+                  Menu
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close fs-3 fw-bold"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body p-0 text-light fw-bold">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light px-3 py-0 fw-bold "
+                      href="../index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light px-3 py-0 fw-bold" href="../_about/about.html"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light px-3 py-0 fw-bold page-active-mobile"
+                      href="../_services/services.html"
+                      >Services</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light px-3 py-0 fw-bold" href="../_blog/blog.html"
+                      >Blog</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light px-3 py-0 fw-bold"
+                      href="../_contact/contact.html"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <button class="navbar-toggler">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-        </div>
+            </div>
+          </nav>
         <div class="heading">
-          <a href="../index.html" class="page-active">Home</a>
+          <a href="../index.html" class="">Home</a>
           <i class="fa-solid fa-chevron-right"></i>
           <a href="">Services</a>
         </div>
@@ -228,7 +286,7 @@
             Deliciousness jumping into <br />
             the mouth.
           </h3>
-          <div class="contact-button py-lg-2">
+          <div class="contact-button py-lg-2 d-flex justify-content-center">
             <a class="left-btn text-decoration-none" href="../_about/about.html"
               >Read More <i class="fa-solid fa-chevron-right"></i
             ></a>
@@ -371,7 +429,7 @@
           <div class="col-lg-4 col-sm-8">
             <div class="item">
               <h3>
-                <a class="text-decoration-none py-4 d-block" href="#">Diner</a>
+                <a class="text-decoration-none py-4 d-block" href="">Diner</a>
               </h3>
               <p>
                 Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
@@ -379,10 +437,10 @@
                 amet Semper at elit.
               </p>
               <div class="socialnetwork">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
               </div>
             </div>
           </div>
@@ -390,11 +448,11 @@
             <div class="item">
               <h4 class="py-4">Usefull Links</h4>
               <ul>
-                <li><a href="./_about/about.html">About Us</a></li>
-                <li><a href="./_services/services.html">Services</a></li>
-                <li><a href="./_blog/blog.html">Blog post</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="./_contact/contact.html">Contact us</a></li>
+                <li><a href="../_about/about.html">About Us</a></li>
+                <li><a href="../_services/services.html">Services</a></li>
+                <li><a href="../_blog/blog.html">Blog post</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="../_contact/contact.html">Contact us</a></li>
               </ul>
             </div>
           </div>
@@ -402,11 +460,11 @@
             <div class="item">
               <h4 class="py-4">More Info</h4>
               <ul>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Vision & Values</a></li>
-                <li><a href="#">Awards</a></li>
-                <li><a href="#">Media</a></li>
-                <li><a href="#">Support</a></li>
+                <li><a href="">History</a></li>
+                <li><a href="">Vision & Values</a></li>
+                <li><a href="">Awards</a></li>
+                <li><a href="">Media</a></li>
+                <li><a href="">Support</a></li>
               </ul>
             </div>
           </div>
@@ -432,19 +490,19 @@
       </div>
       <div class="license p-3 container">
         <div class="row">
-          <div class="col-lg-7 col-sm-12 text-sm-center text-md-start">
-            <div class="copyright-left">
+          <div class="col-lg-7 col-sm-12 text-md-center text-lg-start">
+            <div class="copyright-left text-center">
               <p>
-                © 2021 Diner. All rights reserved. Design by
-                <a href="#" class="special">W3Layouts</a>
+                © 2023 Diner. All rights reserved. Design by
+                <a href="" class="special">Thanh</a>
               </p>
             </div>
           </div>
           <div class="col-lg-5 col-sm-12 text-lg-end text-sm-center">
             <div class="copyright-right">
-              <a href="#">Careers</a>
-              <a href="#">Privacy Policy</a>
-              <a href="./_contact/contact.html">Contact Us</a>
+              <a href="">Careers</a>
+              <a href="">Privacy Policy</a>
+              <a href="../_contact/contact.html">Contact Us</a>
             </div>
           </div>
         </div>

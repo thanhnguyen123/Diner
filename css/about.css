@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
 }
+a,
+i {
+  cursor: pointer;
+}
 section {
   padding-top: 100px;
 }
@@ -88,7 +92,11 @@ header {
   padding: 0 5px;
 }
 .header .page-active {
-  color: #ff6600 !important;
+  color: #ff6600!important;
+}
+.header .page-active-mobile {
+  background-color: #000 !important;
+  color: #ff6600;
 }
 .header .navbar-toggler {
   background-color: transparent;
@@ -105,14 +113,10 @@ header {
 
 .aboutus_content .aboutus_top {
   display: flex;
-  margin-left: -15px;
-  margin-right: -15px;
 }
 
 .aboutus_content .col_left {
   width: 50%;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 .aboutus_content .col_left img {
@@ -123,8 +127,6 @@ header {
 
 .aboutus_content .col_right {
   width: 50%;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 .aboutus_content .col_right h3 {
@@ -177,10 +179,6 @@ img {
   align-items: center;
   margin-bottom: 3rem !important;
   margin-top: 3rem;
-}
-
-.aboutus_top .col_right {
-  padding-left: 3rem !important;
 }
 
 .aboutus_bot {
@@ -498,8 +496,11 @@ footer .license .special:hover {
     line-height: 108px;
   }
 }
-/* điện thoại (xoay ngang) */
+
 @media screen and (max-width: 768px) {
+  .header .header-right {
+    line-height: 100px;
+  }
   .intro_aboutus .aboutus_content .col_left {
     width: 100%;
   }
@@ -526,6 +527,12 @@ footer .license .special:hover {
     flex-wrap: wrap;
   }
 }
-/* điện thoại (xoay dọc) */
-@media screen and (max-width: 576px) {
+
+@media screen and (max-width: 390px) {
+  .header .header-right {
+    line-height: 50px;
+  }
+  .offcanvas-end{
+    width: 300px !important;
+  }
 }

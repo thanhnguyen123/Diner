@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
 }
+a,
+i {
+  cursor: pointer;
+}
 section {
   padding-top: 100px;
 }
@@ -88,7 +92,11 @@ header {
   padding: 0 5px;
 }
 .header .page-active {
-  color: #ff6600 !important;
+  color: #ff6600!important;
+}
+.header .page-active-mobile {
+  background-color: #000 !important;
+  color: #ff6600;
 }
 .header .navbar-toggler {
   background-color: transparent;
@@ -108,7 +116,6 @@ header {
 .introduce .row .intro-left h4 {
   font-weight: 600;
   font-size: 40px;
-  
 }
 .introduce .intro-right .item {
   font-size: 18px;
@@ -235,10 +242,10 @@ header {
   margin-bottom: 50px;
   font-weight: 600;
 }
-.menu .main .list-menu{
+.menu .main .list-menu {
   padding: 0 40px;
 }
-.menu .main .item{
+.menu .main .item {
   padding-bottom: 30px;
 }
 .menu .main .item .price-order {
@@ -354,59 +361,76 @@ footer .license .special:hover {
   color: #ffffff;
   display: block;
 }
-.uptotop:hover{
+.uptotop:hover {
   color: #ffffff;
   opacity: 0.6;
 }
+
 /* desktop */
 @media screen and (max-width: 1200px) {
 }
 /* tablet */
 @media screen and (max-width: 992px) {
-  header{
+  header {
     min-height: 260px;
   }
   .header .header-right .navbar-plus,
-  .header .header-right .research{
+  .header .header-right .research {
     display: none;
   }
-  .header .navbar-toggler{
+  .header .navbar-toggler {
     display: block;
   }
-  .header .switch-mode{
+  .header .switch-mode {
     line-height: 108px;
   }
 }
-/* điện thoại (xoay ngang) */
+
 @media screen and (max-width: 768px) {
-  .introduce .item h3{
+  .header .header-right {
+    line-height: 100px;
+  }
+  .introduce .item h3 {
     font-size: 16px;
   }
-  .introduce .item h4{
-    font-size: 30px!important;
+  .introduce .item h4 {
+    font-size: 30px !important;
     padding-bottom: 20px;
   }
-  .introduce .item p{
+  .introduce .item p {
     font-size: 16px;
   }
   .service .list-number a,
-  .service .detail p{
-    font-size: 16px!important;
+  .service .detail p {
+    font-size: 16px !important;
   }
   .contact {
     height: 320px;
   }
-  .contact .contact-heading h3{
+  .contact .contact-heading h3 {
     font-size: 35px;
   }
-  .contact .contact-button a{
+  .contact .contact-button a {
     font-size: 16px;
   }
   .menu .item h4,
-  .menu .item p{
+  .menu .item p {
     font-size: 16px;
   }
 }
-/* điện thoại (xoay dọc) */
-@media screen and (max-width: 576px) {
+
+@media screen and (max-width: 390px) {
+  .contact .contact-button a {
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+  .contact {
+    height: 350px;
+  }
+  .header .header-right {
+    line-height: 50px;
+  }
+  .offcanvas-end{
+    width: 300px !important;
+  }
 }
